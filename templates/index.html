@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}Simple Blog | Home{% endblock %}
+
+{% block content %}
+    <div class="container hero">
+            <h1>Simple Blog</h1>
+            <p>A simple blog created in Python - Flask, HTML, CSS, and Pico CSS,<br>as a way to study full-stack web programming.</p>
+    </div>
+    <div class="container latest_posts">
+        <h2>Latest Posts</h2>
+        <div class="recents_posts">
+            <article>
+                <h3>Third post</h3>
+                <p>Content of the third post.</p>
+                <a href="/posts/3">See post</a>
+            </article>
+
+            <article>
+                <h3>Second post</h3>
+                <p>Content of the second post.</p>
+                <a href="/posts/2">See post</a>
+            </article>
+            
+            <article>
+                <h3>First post</h3>
+                <p>Content of the first post.</p>
+                <a href="/posts/1">See post</a>
+            </article>
+        </div>
+    </div>
+{% endblock %}

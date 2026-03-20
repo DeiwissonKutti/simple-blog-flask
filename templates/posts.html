@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Simple Blog | Posts{% endblock %}
+
+{% block content %}
+    <div class="container all_posts">
+        <h2>All Posts</h2>
+        <div class="posts">
+            <article>
+                <h3>Second post</h3>
+                <p>Content of the second post.</p>
+                <a href="/posts/2">See post</a>
+            </article>
+            
+            <article>
+                <h3>First post</h3>
+                <p>Content of the first post.</p>
+                <a href="/posts/1">See post</a>
+            </article>
+        </div>
+    </div>
+{% endblock %}
